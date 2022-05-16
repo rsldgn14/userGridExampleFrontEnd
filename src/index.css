@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.headers{
+    display: flex;
+    justify-content: start;
+    user-select: none;
+
+}
+div{
+    user-select: none;
+}
+.headerBox{
+    font-family: Arial;
+    height: 30px;
+    width: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contentBox{
+    min-height: 30px;
+    min-width:150px;
+    height: fit-content;
+    width: max-content;
+    border-width: 0px 2px 2px 2px ;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dataBox{
+    min-height: 30px;
+    min-width:150px;
+    height: fit-content;
+    width: max-content;
+    border-width: 0px 2px 2px 2px ;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataColumn{
+
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+
+}
+.dataColumn:hover{
+    background-color: darkturquoise;
+}
+button{
+    user-select: none;
 }
